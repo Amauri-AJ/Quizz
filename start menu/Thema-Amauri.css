@@ -1,0 +1,17 @@
+body {
+background:url("1990.webp");
+
+height: 100vh;
+color: rgb(14, 10, 10);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.h1 {
+    font-size: 80cm;
+    size: 40cm;
+    
+}
+
