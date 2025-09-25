@@ -21,6 +21,13 @@ button {
 }
 
 button {
-  margin: 25px;
+  margin: 75px;
   top: 30%;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
 }
