@@ -1,33 +1,28 @@
-button {
-    padding: 20px 50px;
-    font-size: 45px;
-    font-weight: bold;
-    color: #ffffff;
-    background: linear-gradient(45deg, #333333, #666666, #999999);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-    box-shadow: 
-        0 0 15px rgba(255, 255, 255, 0.4),
-        0 0 25px rgba(200, 200, 200, 0.3),
-        inset 0 0 10px rgba(255, 255, 255, 0.2);
-    font-family: 'Arial', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+    
+    /* tech category */
+    .tech button {
+        padding: 20px 50px;
+        font-size: 45px;
+        font-weight: bold;
+        color: #ffffff;
+        background: linear-gradient(45deg, #333333, #666666, #999999);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+        box-shadow: 
+            0 0 15px rgba(255, 255, 255, 0.4),
+            0 0 25px rgba(200, 200, 200, 0.3),
+            inset 0 0 10px rgba(255, 255, 255, 0.2);
+        font-family: 'Arial', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 
-button {
-  margin: 75px;
-  top: 30%;
-}
+    .tech h1 {
+        font-size: ;
+    }
 
-.box1{
-    width: 200px;
-    height: 200px;
-    background-color: #ffffff;
-    border: 2px solid #ffffff;
-}
