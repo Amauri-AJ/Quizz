@@ -1,0 +1,83 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.card {
+    background: rgba(red, green, blue, alpha);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: rgb(204, 204, 204);
+}
+
+input[type="text"]:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    background: #00c6ff;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    border-style: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor:col-resize;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+#greeting {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    min-height: 30px;
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
