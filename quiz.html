@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUCK</title>
+</head>
+<link rel="stylesheet" href="assets/quiz.css">
+<script src="scripts/quiz.js"></script>
+<audio id="correctSound" src="sounds/correct.mp3"></audio>
+<audio id="incorrectSound" src="sounds/incorrect.mp3"></audio>
+<audio id="scary" src="sounds/scream.mp3"></audio>
+<body>
+    <div id="boo" style="display: none;">
+        <img src="assets/scare.jpg">
+    </div>
+    <div id="categorySelect">
+        <h2 style="text-align: center;">What category would you like to try?</h2>
+        <div style="text-align: center;">
+            <button id="category1" onclick="category1()"></button>
+            <button id="category2" onclick="category2()"></button>
+            <button id="category3"onclick="category3()"></button>
+            <button id="category4" onclick="category4()"></button>
+        </div>
+    </div>
+    <div id="quiz" style="display: none;">
+        <h2 style="text-align: center;" id="question"></h2>
+        <div style="text-align: center;">
+            <button id="answer1" onclick="answer1()"></button>
+            <button id="answer2" onclick="answer2()"></button>
+            <button id="answer3"onclick="answer3()"></button>
+            <button id="answer4" onclick="answer4()"></button>
+        </div>
+        <button id="half" onclick="half()">50/50</button>
+        <div id="flashbang-overlay"></div>
+    </div>
+</body>
+</html>
