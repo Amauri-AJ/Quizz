@@ -43,11 +43,60 @@ let techAnswers = [
     ["Method", "Procedure", "Routine", "Operation"],
     ["HTTPS", "HTTP", "FTP", "SMTP"]
 ]
-let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 1, 1] // if you are cheating by getting the answers here you are BORING and DUMB !
+
+let magicQuestions = [
+     "In Hermeticism, what is the principle that states 'as above, so below'?",
+    "Which grimoires are attributed to King Solomon in medieval magic?",
+    "In Norse mythology, what is the name of the magical binding placed on Fenrir?",
+    "What does the word 'Goetia' specifically refer to?",
+    "In Kabbalah, which sphere of the Tree of Life is associated with wisdom?",
+    "Which ancient text is considered the foundation of Western alchemy?",
+    "What is the magical language written in the Voynich Manuscript often referred to as?",
+    "In Dungeons & Dragons, what is the highest level spell slot available to wizards?",
+    "Which ancient Greek figure was said to have taught necromancy and ghost summoning?",
+    "The Emerald Tablet famously contains the phrase 'That which is below is like that which is above.' Who is it attributed to?",
+    "What type of magic involves inscribing symbols of power onto objects?",
+    "Which magical creature in Mesopotamian myth is a hybrid lion-demon associated with storms?",
+    "What was John Dee’s magical language, supposedly revealed by angels?",
+    "What is the difference between Theurgy and Thaumaturgy?",
+    "In Arthurian legend, what is the name of Merlin’s cave of prophecy?",
+    "Which branch of alchemy sought the Elixir of Life rather than transmuting metals?",
+    "What is the magical law that states any action you take returns to you threefold?",
+    "What mythical bird from Slavic folklore is both a blessing and a curse to those who encounter it?",
+    "Which medieval magical book supposedly describes how to summon planetary spirits?",
+    "In occult tradition, what is the 'Akashic Record' believed to be?"
+]
+ 
+let magicAnswers = [
+     ["Law of Similarity", "Principle of Correspondence", "Hermetic Mirror", "Doctrine of Equivalence"],
+    ["Key of Solomon", "Grimoire of Shadows", "Picatrix", "Book of Thoth"],
+    ["Gleipnir", "Mjölnir", "Ragnarök", "Niflheim Chain"],
+    ["Invocation of Angels", "Banishing Rituals", "Evocation of Demons", "Alchemy of Metals"],
+    ["Chokmah", "Binah", "Kether", "Yesod"],
+    ["Emerald Tablet", "Corpus Hermeticum", "Book of Abramelin", "Sefer Yetzirah"],
+    ["Celestial Script", "Enochian", "Voynichese", "Runes of Saturn"],
+    ["7th level", "8th level", "9th level", "10th level"],
+    ["Orpheus", "Hecate", "Medea", "Circe"],
+    ["Plato", "Thoth Hermes Trismegistus", "Zosimos of Panopolis", "Paracelsus"],
+    ["Runic Casting", "Sigil Magic", "Inscription Magic", "Glyphwork"],
+    ["Lamassu", "Anzu", "Pazuzu", "Utu"],
+    ["Coptic Script", "Enochian", "Hermetic Latin", "Angelical"],
+    ["Divine union with gods vs practical miracles", "Summoning vs Banishing", "Healing vs Destruction", "Alchemy vs Astrology"],
+    ["Camlann", "Avalon", "Crystal Cave", "Caer Sidi"],
+    ["Chrysopoeia", "Iatrochemistry", "Transmutation", "Sulfur-Mercury Doctrine"],
+    ["Rule of Three", "Law of Return", "Circle of Balance", "Triadic Oath"],
+    ["Simargl", "Firebird", "Roc", "Zhar-ptitsa"],
+    ["Key of Solomon", "Liber Juratus", "Ars Notoria", "Book of Raziel"],
+    ["A universal library of all events", "A magical book that never ends", "A hidden grimoire in Atlantis", "A record of all magical oaths"]
+]
+
+// if you are cheating by getting the answers here you are BORING and DUMB !
+let magicCorrectAnswers = [2, 1, 1, 3, 1, 2, 3, 3, 1, 2, 2, 3, 2, 1, 3, 2, 1, 2, 3, 1]
+let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 1, 1]
 
 const categories = [
     ["Technology", techQuestions, techAnswers, techCorrectAnswers],
-    ["Magie", techQuestions, techAnswers, techCorrectAnswers],
+    ["Magic", magicQuestions, magicAnswers, magicCorrectAnswers],
     ["Dogs", techQuestions, techAnswers, techCorrectAnswers],
     ["Food", techQuestions, techAnswers, techCorrectAnswers],
 ]
