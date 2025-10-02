@@ -47,6 +47,9 @@ let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 
 
 const categories = [
     ["Technology", techQuestions, techAnswers, techCorrectAnswers],
+    ["Magic", techQuestions, techAnswers, techCorrectAnswers],
+    ["Doggo's", techQuestions, techAnswers, techCorrectAnswers],
+    ["Food", techQuestions, techAnswers, techCorrectAnswers],
 ]
 
 let chosenCategory = 0

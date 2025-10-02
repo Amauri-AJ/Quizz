@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUCK</title>
 </head>
-<link rel="stylesheet" href="assets/quiz.css">
-<script src="scripts/quiz.js"></script>
+<link rel="stylesheet" href="/assets/css/quiz.css">
+<link rel="stylesheet" href="/assets/css/background-quiz.css">
+<script src="/scripts/quiz.js"></script>
 <audio id="correctSound" src="sounds/correct.mp3"></audio>
 <audio id="incorrectSound" src="sounds/incorrect.mp3"></audio>
 <audio id="scary" src="sounds/scream.mp3"></audio>
@@ -17,19 +18,19 @@
     <div id="categorySelect">
         <h2 style="text-align: center;">What category would you like to try?</h2>
         <div style="text-align: center;">
-            <button id="category1" onclick="category1()"></button>
-            <button id="category2" onclick="category2()"></button>
-            <button id="category3"onclick="category3()"></button>
-            <button id="category4" onclick="category4()"></button>
+            <button class="button1" id="category1" onclick="category1()"></button>
+            <button class="button2" id="category2" onclick="category2()"></button>
+            <button class="button3" id="category3"onclick="category3()"></button>
+            <button class="button4" id="category4" onclick="category4()"></button>
         </div>
     </div>
     <div id="quiz" style="display: none;">
         <h2 style="text-align: center;" id="question"></h2>
         <div style="text-align: center;">
-            <button id="answer1" onclick="answer1()"></button>
-            <button id="answer2" onclick="answer2()"></button>
-            <button id="answer3"onclick="answer3()"></button>
-            <button id="answer4" onclick="answer4()"></button>
+            <button class="buttonA" id="answer1" onclick="answer1()"></button>
+            <button class="buttonB" id="answer2" onclick="answer2()"></button>
+            <button class="buttonC" id="answer3"onclick="answer3()"></button>
+            <button class="buttonD" id="answer4" onclick="answer4()"></button>
         </div>
         <button id="half" onclick="half()">50/50</button>
         <div id="flashbang-overlay"></div>
