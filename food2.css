@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background-color: #b6b32491;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(75, 180, 175);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+}
+
+.container:hover {
+    background: linear-gradient(150deg, rgba(164, 180, 15, 0.699), rgba(27, 194, 12, 0.842))
+}
+
+body {
+    background: linear-gradient(190deg, rgba(159, 190, 18, 0.822), rgba(13, 13, 216, 0.877))
+}
+
+#question-container {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: auto;
+    background-color: rgba(230, 152, 56, 0.767);
+}
+
+#completion-message {
+    margin-top: 0px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+input {
+    border-radius: 6px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.877);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
