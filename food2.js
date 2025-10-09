@@ -69,3 +69,4 @@ answerBtn.addEventListener('click', () => {
 
 // Initial load
 showQuestion(currentIndex);
+s
