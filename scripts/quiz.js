@@ -33,7 +33,7 @@ let techAnswers = [
     ["2002", "2009", "2008", "2005"],
     ["Black", "Red", "Green", "White"],
     ["1", "2", "3", "4"],
-    ["Mibibytes", "Kilobytes", "Mebibytes", "Gigabytes"],
+    ["Megabits", "Kilobytes", "Mebibytes", "Gigabytes"],
     ["Pen and paper", "Typewriters", "Punched cards", "Carved wood"],
     ["Terry Davis", "Linus Torvalds", "Ada Lovelace", "Edsger Wybe Dijkstra"],
     ["C", "ALGOL 60", "APL", "SQL"],
@@ -68,7 +68,7 @@ let magicQuestions = [
 ]
  
 let magicAnswers = [
-     ["Law of Similarity", "Principle of Correspondence", "Hermetic Mirror", "Doctrine of Equivalence"],
+    ["Law of Similarity", "Principle of Correspondence", "Hermetic Mirror", "Doctrine of Equivalence"],
     ["Key of Solomon", "Grimoire of Shadows", "Picatrix", "Book of Thoth"],
     ["Gleipnir", "Mjölnir", "Ragnarök", "Niflheim Chain"],
     ["Invocation of Angels", "Banishing Rituals", "Evocation of Demons", "Alchemy of Metals"],
@@ -97,8 +97,8 @@ let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 
 const categories = [
     ["Technology", techQuestions, techAnswers, techCorrectAnswers],
     ["Magic", magicQuestions, magicAnswers, magicCorrectAnswers],
-    ["Dogs", techQuestions, techAnswers, techCorrectAnswers],
     ["Food", techQuestions, techAnswers, techCorrectAnswers],
+    ["Random trivia", techQuestions, techAnswers, techCorrectAnswers],
 ]
 
 let chosenCategory = 0
@@ -108,7 +108,9 @@ const questionAmount = techQuestions.length
 let questionNumber = 0
 let correctNumber = 0
 
-let lifelineUsed = false
+let lifelinesUsed = 0
+
+let totalLifelines = 3
 
 // totally didn't take this from stackoverflow trust me
 function shuffle(obj1, obj2, obj3) {
@@ -189,10 +191,8 @@ function finishQuiz() {
 function boo() {
 	document.getElementById("boo").style.display = "block"
 	document.getElementById("quiz").style.display = "none"
-        document.body.style.background = "black"
     let audio = document.getElementById("scary").play()
     setTimeout(function() {
-        document.body.style.background = "white"
         document.getElementById("quiz").style.display = "block"
         document.getElementById("boo").remove()
     }, 3000)
@@ -223,12 +223,16 @@ function half() {
     if (lifelineUsed) return
     lifelineUsed = true
     document.getElementById("half").style = "background-color: #999999"
-    let randomAnswer
+    let randomAnswer1
     do {
-        randomAnswer = Math.floor(Math.random() * 3) + 1
-    } while (randomAnswer == categories[chosenCategory][3][questionNumber])
-    document.getElementById("answerI".replace("I", categories[chosenCategory][3][questionNumber])).style = "background-color: #00FF00"
-    document.getElementById("answerI".replace("I", randomAnswer)).style = "background-color: #00FF00"
+        randomAnswer1 = Math.floor(Math.random() * 3) + 1
+    } while (randomAnswer1 == categories[chosenCategory][3][questionNumber])
+    let randomAnswer2
+    do {
+        randomAnswer2 = Math.floor(Math.random() * 3) + 1
+    } while (randomAnswer2 == categories[chosenCategory][3][questionNumber] || randomAnswer2 == randomAnswer1)
+    document.getElementById("answerI".replace("I", randomAnswer1)).style.display = "none"
+    document.getElementById("answerI".replace("I", randomAnswer2)).style.display = "none"
 }
 
 function answer1() {

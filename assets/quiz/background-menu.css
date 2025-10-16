@@ -1,15 +1,109 @@
-body {
+
+
+body.menu {
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #ff00eadf, #b405ee75);
+    background: linear-gradient(45deg, #e5f675, #dd5e0e);
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
-body::before {
+body.menu::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+body.cat1 {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #286903, #00ffd0);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+body.cat1::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+body.cat2 {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #280b4a, #8d1b81);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+body.cat2::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+body.cat3 {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #F4A261, #2A9D8F);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+body.cat3::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+body.cat4 {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #7DF9FF, #DC143C);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+body.cat4::before {
     content: '';
     position: fixed;
     inset: 0;
