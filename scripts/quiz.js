@@ -223,5 +223,6 @@ function answer(blimg) {
 function category(blimg) {
     username = document.getElementById("name").value
     chosenCategory = blimg.id-1
+    document.body.className = "cat.".replace(".", blimg.id)
     startQuiz()
 }
