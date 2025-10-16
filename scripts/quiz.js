@@ -45,53 +45,53 @@ let techAnswers = [
 ]
 
 let magicQuestions = [
-     "In Hermeticism, what is the principle that states 'as above, so below'?",
-    "Which grimoires are attributed to King Solomon in medieval magic?",
-    "In Norse mythology, what is the name of the magical binding placed on Fenrir?",
-    "What does the word 'Goetia' specifically refer to?",
-    "In Kabbalah, which sphere of the Tree of Life is associated with wisdom?",
-    "Which ancient text is considered the foundation of Western alchemy?",
-    "What is the magical language written in the Voynich Manuscript often referred to as?",
-    "In Dungeons & Dragons, what is the highest level spell slot available to wizards?",
-    "Which ancient Greek figure was said to have taught necromancy and ghost summoning?",
-    "The Emerald Tablet famously contains the phrase 'That which is below is like that which is above.' Who is it attributed to?",
-    "What type of magic involves inscribing symbols of power onto objects?",
-    "Which magical creature in Mesopotamian myth is a hybrid lion-demon associated with storms?",
-    "What was John Dee’s magical language, supposedly revealed by angels?",
-    "What is the difference between Theurgy and Thaumaturgy?",
-    "In Arthurian legend, what is the name of Merlin’s cave of prophecy?",
-    "Which branch of alchemy sought the Elixir of Life rather than transmuting metals?",
-    "What is the magical law that states any action you take returns to you threefold?",
-    "What mythical bird from Slavic folklore is both a blessing and a curse to those who encounter it?",
-    "Which medieval magical book supposedly describes how to summon planetary spirits?",
-    "In occult tradition, what is the 'Akashic Record' believed to be?"
-]
- 
+    "In Slavic folklore, what is the magical principle that governs fate and destiny?",
+    "Which legendary Slavic wizard was said to guard hidden knowledge and forests?",
+    "What is the name of the magical binding or curse often placed by Slavic witches?",
+    "In Slavic magic, what does the term 'Vedun' or 'Vedma' refer to?",
+    "Which Slavic deity is associated with wisdom and magic?",
+    "What ancient Slavic object was used to store protective spells and charms?",
+    "What is the name of the mystical runes or symbols used in Slavic folk magic?",
+    "In Slavic tales, what is the highest form of magical transformation?",
+    "Which Slavic figure was believed to summon or communicate with spirits?",
+    "Which magical Slavic artifact is said to hold the secrets of the universe?",
+    "What type of magic involves creating protective symbols or charms in Slavic tradition?",
+    "Which magical creature in Slavic mythology is a hybrid bird often associated with misfortune and protection?",
+    "Which Slavic magical language or code was used by sorcerers in rituals?",
+    "What is the difference between Belobog and Chernobog in Slavic magic?",
+    "In Slavic legends, what is the name of Baba Yaga's magical hut that can move?",
+    "Which branch of Slavic magic seeks to heal and protect rather than curse?",
+    "What magical law in Slavic belief reflects that every action has a natural consequence?",
+    "Which mythical bird from Slavic folklore can both bring blessings and curses?",
+    "Which medieval Slavic text supposedly contains incantations and ritual instructions?",
+    "In Slavic mystical tradition, what is believed to be the record of all souls and deeds?"
+];
+
 let magicAnswers = [
-    ["Law of Similarity", "Principle of Correspondence", "Hermetic Mirror", "Doctrine of Equivalence"],
-    ["Key of Solomon", "Grimoire of Shadows", "Picatrix", "Book of Thoth"],
-    ["Gleipnir", "Mjölnir", "Ragnarök", "Niflheim Chain"],
-    ["Invocation of Angels", "Banishing Rituals", "Evocation of Demons", "Alchemy of Metals"],
-    ["Chokmah", "Binah", "Kether", "Yesod"],
-    ["Emerald Tablet", "Corpus Hermeticum", "Book of Abramelin", "Sefer Yetzirah"],
-    ["Celestial Script", "Enochian", "Voynichese", "Runes of Saturn"],
-    ["7th level", "8th level", "9th level", "10th level"],
-    ["Orpheus", "Hecate", "Medea", "Circe"],
-    ["Plato", "Thoth Hermes Trismegistus", "Zosimos of Panopolis", "Paracelsus"],
-    ["Runic Casting", "Sigil Magic", "Inscription Magic", "Glyphwork"],
-    ["Lamassu", "Anzu", "Pazuzu", "Utu"],
-    ["Coptic Script", "Enochian", "Hermetic Latin", "Angelical"],
-    ["Divine union with gods vs practical miracles", "Summoning vs Banishing", "Healing vs Destruction", "Alchemy vs Astrology"],
-    ["Camlann", "Avalon", "Crystal Cave", "Caer Sidi"],
-    ["Chrysopoeia", "Iatrochemistry", "Transmutation", "Sulfur-Mercury Doctrine"],
-    ["Rule of Three", "Law of Return", "Circle of Balance", "Triadic Oath"],
-    ["Simargl", "Firebird", "Roc", "Zhar-ptitsa"],
-    ["Key of Solomon", "Liber Juratus", "Ars Notoria", "Book of Raziel"],
-    ["A universal library of all events", "A magical book that never ends", "A hidden grimoire in Atlantis", "A record of all magical oaths"]
-]
+    ["Rodovoy Zakon", "Fate’s Thread", "Navi Principle", "Law of Triads"],
+    ["Volkhv", "Koschei the Deathless", "Domovoi", "Rusalka"],
+    ["Zavoivanie", "Zaklinanie", "Porcha", "Vlastovka"],
+    ["A healer", "A witch", "A spirit guide", "A necromancer"],
+    ["Veles", "Perun", "Stribog", "Mokosh"],
+    ["Talismans", "Kupala Stones", "Charm Bags", "Zorya Tablets"],
+    ["Rodovye Znak", "Svarog Runes", "Slavic Sigils", "Kupala Glyphs"],
+    ["Shape-shifting", "Fire manipulation", "Water control", "Time bending"],
+    ["Morozko", "Volkhv", "Koschei", "Domovoi"],
+    ["The Stone of Svarog", "The Firebird’s Feather", "The Sun Disk", "The Rod of Veles"],
+    ["Charm Magic", "Runic Carving", "Sigil Craft", "Incantation Etching"],
+    ["Simargl", "Zhar-ptitsa", "Alkonost", "Sirin"],
+    ["Old Slavic Script", "Cherti Writing", "Runic Signs", "Divine Symbols"],
+    ["Light vs Dark magic", "Water vs Fire", "Sun vs Moon", "Earth vs Sky"],
+    ["Hut on Chicken Legs", "Crystal Cave", "Iron Tower", "Forest Hollow"],
+    ["Healing Magic", "Curse Magic", "Divination", "Elemental Magic"],
+    ["Zakon Trojki", "Circle of Balance", "Law of Threefold Return", "Triadic Rule"],
+    ["Firebird", "Zhar-ptitsa", "Sirin", "Alkonost"],
+    ["Izbornik", "Domostroy", "Book of Raziel", "Veles Book"],
+    ["The Book of Souls", "The Akashic Record", "The Chronicle of the Gods", "The Rodovoy Ledger"]
+];
 
 // if you are cheating by getting the answers here you are BORING and DUMB !
-let magicCorrectAnswers = [2, 1, 1, 3, 1, 2, 3, 3, 1, 2, 2, 3, 2, 1, 3, 2, 1, 2, 3, 1]
+let magicCorrectAnswers = [1, 1, 3, 2, 1, 1, 3, 1, 2, 2, 3, 2, 2, 1, 1, 1, 3, 2, 4, 1];
 let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 1, 1]
 
 const categories = [
