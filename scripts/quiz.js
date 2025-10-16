@@ -33,7 +33,7 @@ let techAnswers = [
     ["2002", "2009", "2008", "2005"],
     ["Black", "Red", "Green", "White"],
     ["1", "2", "3", "4"],
-    ["Mibibytes", "Kilobytes", "Mebibytes", "Gigabytes"],
+    ["Megabits", "Kilobytes", "Gigabits", "Gigabytes"],
     ["Pen and paper", "Typewriters", "Punched cards", "Carved wood"],
     ["Terry Davis", "Linus Torvalds", "Ada Lovelace", "Edsger Wybe Dijkstra"],
     ["C", "ALGOL 60", "APL", "SQL"],
@@ -43,9 +43,34 @@ let techAnswers = [
     ["Method", "Procedure", "Routine", "Operation"],
     ["HTTPS", "HTTP", "FTP", "SMTP"]
 ]
-let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 1, 1] // if you are cheating by getting the answers here you are BORING and DUMB !
+
+let foodQuestions = [
+    "With what animal meat are hot dogs made?",
+    "What country is Sushi from?",
+    "What country is Pasta from?",
+    "Which one of these cheeses are Dutch?",
+    "Which of these dishes are Persian?",
+    "What country is Vodka from?",
+    "What country is Vodka from?",
+]
+
+let foodAnswers = [
+    ["Sheep", "Cow", "Lamb", "Pig"],
+    ["China", "Korea", "Japan", "Vietnam"],
+    ["Spain", "Italy", "Germany", "Portugal"],
+    ["Munster", "Mozzarella", "Edam", "Cheddar"],
+    ["Shawarma", "Kebab", "Döner", "Roti"],
+    ["Barbieland", "Ukraine", "Poland", "Russia"],
+]
+
+// if you are cheating by getting the answers here you are BORING and DUMB !
+let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 1, 3, 2, 1, 2, 4, 2, 1, 1]
+let foodCorrectAnswers = [4, 3, 2, 3, 2, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 1, 1]
 
 const categories = [
+    ["Technology", techQuestions, techAnswers, techCorrectAnswers],
+    ["Technology", techQuestions, techAnswers, techCorrectAnswers],
+    ["Technology", techQuestions, techAnswers, techCorrectAnswers],
     ["Technology", techQuestions, techAnswers, techCorrectAnswers],
 ]
 
@@ -54,9 +79,13 @@ let chosenCategory = 0
 const questionAmount = techQuestions.length
 
 let questionNumber = 0
-let correctNumber = 0
+let correctCount = 0
 
-let lifelineUsed = false
+let lifelineUsedThisRound = false
+let lifelinesUsed = 0
+let totalLifelines = 3
+
+let username
 
 // totally didn't take this from stackoverflow trust me
 function shuffle(obj1, obj2, obj3) {
@@ -80,7 +109,7 @@ function shuffle(obj1, obj2, obj3) {
 
 window.onload = function() {
     for (i = 0; i < 4; i++)
-        document.getElementById("categoryI".replace("I", i+1)).innerHTML = categories[i][0]
+        document.getElementById(i+1).innerHTML = categories[i][0]
 }
 
 function flashbang(good) {
@@ -100,16 +129,18 @@ function flashbang(good) {
 
 function changeQuestion() {
     if (questionNumber == 13) boo()
+    lifelineUsedThisRound = false
     document.getElementById("question").innerHTML = categories[chosenCategory][1][questionNumber]
     for (i = 0; i < 4; i++) {
-        document.getElementById("answerI".replace("I", i+1)).innerHTML = categories[chosenCategory][2][questionNumber][i]
-        document.getElementById("answerI".replace("I", i+1)).style = "background-color: #00FFFF"
+        document.getElementById(i+1).innerHTML = categories[chosenCategory][2][questionNumber][i]
+        document.getElementById(i+1).style = "background-color: #00FFFF"
     }
 }
 
 function startQuiz() {
-    document.getElementById("categorySelect").remove()
+    document.getElementById("category-select").remove()
     document.getElementById("quiz").style.display = "block"
+    document.getElementById("half").innerHTML = "50/50 (.)".replace(".", totalLifelines-lifelinesUsed)
 
     shuffle(categories[chosenCategory][1], categories[chosenCategory][2], categories[chosenCategory][3])
 
@@ -117,34 +148,30 @@ function startQuiz() {
 }
 
 function finishQuiz() {
-    document.getElementById("half").remove()
-    document.getElementById("question").remove()
+    document.getElementById("quiz").style.display = "none"
+    document.getElementById("end").style.display = "block"
     for (i = 0; i < 4; i++)
-        document.getElementById("answerI".replace("I", i+1)).remove()
-    const congrats = document.createElement("h1")
-    congrats.innerText = "You did it!"
-    const stat = document.createElement("p")
-    stat.innerText = `You got ${correctNumber} out of ${questionAmount} questions right!`
-    const restart = document.createElement("button")
-    restart.innerHTML = "Restart"
-    restart.onclick = function() {window.location.reload()}
-    document.body.appendChild(congrats)
-    document.body.appendChild(stat)
-    document.body.appendChild(restart)
+        document.getElementById(i+1).remove()
+    const stat = document.getElementById("stats")
+    const nameText = document.getElementById("name-replace")
+    stat.innerHTML = stat.innerHTML.replace("{}", correctCount)
+    nameText.innerHTML = nameText.innerHTML.replace("{}", username)
+}
+
+function restart() {
+    window.location.reload()
 }
 
 // don't question it
 function boo() {
 	document.getElementById("boo").style.display = "block"
 	document.getElementById("quiz").style.display = "none"
-        document.body.style.background = "black"
-    let audio = document.getElementById("scary").play()
+    document.getElementById("scary").play()
     setTimeout(function() {
-        document.body.style.background = "white"
         document.getElementById("quiz").style.display = "block"
         document.getElementById("boo").remove()
     }, 3000)
-};
+}
 
 function showResult(wasAnswerCorrect) {
     if (wasAnswerCorrect) {
@@ -157,7 +184,7 @@ function showResult(wasAnswerCorrect) {
         document.getElementById('incorrectSound').currentTime = 0
         document.getElementById('incorrectSound').play()
     }
-    correctNumber += wasAnswerCorrect
+    correctCount += wasAnswerCorrect
     if (questionNumber+1 == questionAmount)
         finishQuiz()
     else {
@@ -168,53 +195,33 @@ function showResult(wasAnswerCorrect) {
 }
 
 function half() {
-    if (lifelineUsed) return
-    lifelineUsed = true
-    document.getElementById("half").style = "background-color: #999999"
-    let randomAnswer
+    if (lifelineUsedThisRound || lifelinesUsed == totalLifelines) return
+
+    lifelinesUsed++
+    lifelineUsedThisRound = true
+
+    let randomAnswer1
     do {
-        randomAnswer = Math.floor(Math.random() * 3) + 1
-    } while (randomAnswer == categories[chosenCategory][3][questionNumber])
-    document.getElementById("answerI".replace("I", categories[chosenCategory][3][questionNumber])).style = "background-color: #00FF00"
-    document.getElementById("answerI".replace("I", randomAnswer)).style = "background-color: #00FF00"
+        randomAnswer1 = Math.floor(Math.random() * 3) + 1
+    } while (randomAnswer1 == categories[chosenCategory][3][questionNumber])
+
+    let randomAnswer2
+    do {
+        randomAnswer2 = Math.floor(Math.random() * 3) + 1
+    } while (randomAnswer2 == categories[chosenCategory][3][questionNumber] || randomAnswer2 == randomAnswer1)
+
+    document.getElementById("half").innerHTML = "50/50 (.)".replace(".", totalLifelines-lifelinesUsed)
+    document.getElementById(randomAnswer1).style.display = "none"
+    document.getElementById(randomAnswer2).style.display = "none"
 }
 
-function answer1() {
-    if (categories[chosenCategory][3][questionNumber] == 1) showResult(true)
+function answer(blimg) {
+    if (categories[chosenCategory][3][questionNumber] == blimg.id) showResult(true)
     else showResult(false)
 }
 
-function answer2() {
-    if (categories[chosenCategory][3][questionNumber] == 2) showResult(true)
-    else showResult(false)
-}
-
-function answer3() {
-    if (categories[chosenCategory][3][questionNumber] == 3) showResult(true)
-    else showResult(false)
-}
-
-function answer4() {
-    if (categories[chosenCategory][3][questionNumber] == 4) showResult(true)
-    else showResult(false)
-}
-
-function category1() {
-    chosenCategory = 0
-    startQuiz()
-}
-
-function category2() {
-    chosenCategory = 1
-    startQuiz()
-}
-
-function category3() {
-    chosenCategory = 2
-    startQuiz()
-}
-
-function category4() {
-    chosenCategory = 3
+function category(blimg) {
+    username = document.getElementById("name").value
+    chosenCategory = blimg.id-1
     startQuiz()
 }

@@ -10,29 +10,37 @@
 <audio id="correctSound" src="sounds/correct.mp3"></audio>
 <audio id="incorrectSound" src="sounds/incorrect.mp3"></audio>
 <audio id="scary" src="sounds/scream.mp3"></audio>
-<body>
+<body style="text-align: center;">
     <div id="boo" style="display: none;">
         <img src="assets/scare.jpg">
     </div>
-    <div id="categorySelect">
-        <h2 style="text-align: center;">What category would you like to try?</h2>
-        <div style="text-align: center;">
-            <button id="category1" onclick="category1()"></button>
-            <button id="category2" onclick="category2()"></button>
-            <button id="category3"onclick="category3()"></button>
-            <button id="category4" onclick="category4()"></button>
+    <div id="category-select">
+        <h2>What category would you like to try?</h2>
+        <input style="justify-content: center;" id="name" placeholder="What's your name?">
+        <div>
+            <br>
+            <button id="1" onclick="category(this)"></button>
+            <button id="2" onclick="category(this)"></button>
+            <button id="3"onclick="category(this)"></button>
+            <button id="4" onclick="category(this)"></button>
         </div>
     </div>
     <div id="quiz" style="display: none;">
-        <h2 style="text-align: center;" id="question"></h2>
-        <div style="text-align: center;">
-            <button id="answer1" onclick="answer1()"></button>
-            <button id="answer2" onclick="answer2()"></button>
-            <button id="answer3"onclick="answer3()"></button>
-            <button id="answer4" onclick="answer4()"></button>
+        <h2 id="question"></h2>
+        <div>
+            <button id="1" onclick="answer(this)"></button>
+            <button id="2" onclick="answer(this)"></button>
+            <button id="3"onclick="answer(this)"></button>
+            <button id="4" onclick="answer(this)"></button>
         </div>
-        <button id="half" onclick="half()">50/50</button>
+        <button id="half" onclick="half()">50/50 (.)</button>
         <div id="flashbang-overlay"></div>
+    </div>
+    <div id="end" style="display: none;">
+        <h1 id="name-replace">Good job, {}!</h1>
+        <h1>You did it!</h1>
+        <p id="stats">You got {} out of 20 questions right!</p>
+        <button onclick="restart()">Restart</button>
     </div>
 </body>
 </html>
