@@ -90,15 +90,110 @@ let magicAnswers = [
     ["The Book of Souls", "The Akashic Record", "The Chronicle of the Gods", "The Rodovoy Ledger"]
 ];
 
+let foodQuestions = [
+    "What is the traditional Polish soup made from fermented rye flour called?",
+    "Which Polish dish consists of dumplings filled with potatoes, cheese, or meat?",
+    "What is the name of the Polish smoked sausage made from pork and garlic?",
+    "Which Polish dessert is a poppy seed roll often served during Christmas?",
+    "What is the Polish word for fermented cabbage used in many traditional dishes?",
+    "Which soup made from beetroot is a staple of Polish cuisine?",
+    "What traditional Polish dish is made of layers of potatoes, onions, and meat baked together?",
+    "What is the name of the Polish doughnut traditionally eaten on Fat Thursday?",
+    "Which Polish dish is made of cabbage leaves stuffed with rice and meat?",
+    "What kind of bread is Poland especially famous for, often made with rye flour?",
+    "Which dish is a cold beet soup served with sour cream and eggs in summer?",
+    "What is the name of the Polish hunter’s stew made with sauerkraut, cabbage, and meat?",
+    "Which Polish cheese from the Tatra mountains is smoked and has a distinct spindle shape?",
+    "What is the traditional Polish Christmas Eve fish dish?",
+    "Which Polish alcoholic drink is made from fermented honey?",
+    "What is the name of the small Polish dumplings often served with butter and sugar or meat sauce?",
+    "Which dish is made from potato pancakes, often served with sour cream or goulash?",
+    "What is the Polish version of blood sausage called?",
+    "Which Polish cake is layered with custard and puff pastry, often dusted with powdered sugar?",
+    "What is the name of the traditional Polish soup served at Easter made with white sausage and eggs?"
+];
+
+let foodAnswers = [
+    ["Żurek", "Barszcz", "Rosół", "Flaki"],
+    ["Knedle", "Pierogi", "Kopytka", "Gołąbki"],
+    ["Kielbasa", "Salceson", "Kaszanaka", "Pasztet"],
+    ["Makowiec", "Sernik", "Pączek", "Keks"],
+    ["Kapusta", "Zupa", "Barszcz", "Chrzan"],
+    ["Barszcz", "Żurek", "Rosół", "Kapuśniak"],
+    ["Babka Ziemniaczana", "Placki", "Gołąbki", "Kotlety"],
+    ["Pączek", "Faworki", "Makowiec", "Sernik"],
+    ["Gołąbki", "Pierogi", "Kotlety", "Knedle"],
+    ["Chleb Żytni", "Babka", "Bułka Tarta", "Pączek"],
+    ["Chłodnik", "Żurek", "Barszcz", "Rosół"],
+    ["Bigos", "Żurek", "Kapuśniak", "Rosół"],
+    ["Oscypek", "Bryndza", "Twaróg", "Bundz"],
+    ["Karp", "Pstrąg", "Dorsz", "Łosoś"],
+    ["Miód Pitny", "Żubrówka", "Nalewka", "Wódka"],
+    ["Kopytka", "Pierogi", "Knedle", "Pyzy"],
+    ["Placki Ziemniaczane", "Babka Ziemniaczana", "Kotlet Schabowy", "Kluski Śląskie"],
+    ["Kaszanka", "Kielbasa", "Salceson", "Pasztet"],
+    ["Kremówka", "Sernik", "Makowiec", "Karpatka"],
+    ["Żurek", "Barszcz Biały", "Kapuśniak", "Rosół"]
+];
+
+let sexToyQuestions = [
+    "What is the most common material used for high-quality vibrators?",
+    "Which sex toy is specifically designed for prostate stimulation?",
+    "What is a common feature of a rabbit vibrator?",
+    "Which toy is designed for use by couples during intercourse?",
+    "What type of toy is typically made from glass, metal, or silicone and is smooth and solid?",
+    "Which type of sex toy can be worn on the fingers for clitoral or nipple stimulation?",
+    "What is the main function of a cock ring?",
+    "Which toy simulates oral sex for a male user?",
+    "Which type of toy is filled with air or water and used for anal training?",
+    "What is a common term for small, discreet vibrating toys worn in underwear?",
+    "Which sex toy uses suction to stimulate the clitoris without direct vibration?",
+    "Which type of lubricant is recommended for silicone sex toys?",
+    "Which toy is often used in BDSM and includes cuffs, blindfolds, and restraints?",
+    "Which type of dildo is curved for targeted G-spot stimulation?",
+    "What is the term for toys designed for remote or app-controlled use?",
+    "Which type of toy mimics the shape of a penis and can be realistic or abstract?",
+    "Which toy is designed to deliver percussive or rumbly sensations to large areas of the body?",
+    "What is the purpose of a kegel exerciser or Ben Wa balls?",
+    "Which sex toy is inflatable to adjust size or pressure during use?",
+    "What is a common way to clean non-porous silicone, glass, or metal toys?"
+];
+
+let sexToyAnswers = [
+    ["TPE", "Silicone", "PVC", "Rubber"],
+    ["Dildo", "Prostate Massager", "Anal Beads", "Cock Ring"],
+    ["Dual stimulation for clitoris and vagina", "Rotating shaft only", "Vibrates externally", "Made of glass"],
+    ["Couples vibrator", "Anal plug", "Cock sleeve", "Masturbator"],
+    ["Dildo", "Vibrator", "Fleshlight", "Rabbit vibrator"],
+    ["Finger vibrator", "Anal beads", "Cock ring", "Suction toy"],
+    ["Increase erection firmness and duration", "Provide vibration", "Massage muscles", "Deliver suction"],
+    ["Masturbator", "Cock ring", "Anal plug", "Finger vibrator"],
+    ["Butt plug", "Anal beads", "Inflatable plug", "Prostate massager"],
+    ["Panty vibrator", "Bullet vibrator", "Finger vibrator", "G-spot dildo"],
+    ["Clitoral suction toy", "Vibrator", "Dildo", "Masturbator"],
+    ["Water-based lubricant", "Silicone-based lubricant", "Oil-based lubricant", "Hybrid lubricant"],
+    ["BDSM kit", "Anal beads", "Cock ring set", "Gag set"],
+    ["G-spot dildo", "Anal plug", "Prostate massager", "Rabbit vibrator"],
+    ["Remote-controlled vibrator", "Bullet vibrator", "Masturbator", "Cock ring"],
+    ["Dildo", "Vibrator", "Anal beads", "Cock ring"],
+    ["Wand vibrator", "Bullet vibrator", "Cock ring", "G-spot dildo"],
+    ["Strengthen pelvic muscles", "Increase sensitivity", "Provide clitoral stimulation", "Anal training"],
+    ["Inflatable plug", "Vibrating dildo", "Anal beads", "Cock ring"],
+    ["Soap and water", "Boil or use toy cleaner", "Dishwasher", "Rinse with alcohol"]
+];
+
 // if you are cheating by getting the answers here you are BORING and DUMB !
-let magicCorrectAnswers = [1, 1, 3, 2, 1, 1, 3, 1, 2, 2, 3, 2, 2, 1, 1, 1, 3, 2, 4, 1];
+let magicCorrectAnswers = [1, 1, 3, 2, 1, 1, 3, 1, 2, 2, 3, 2, 2, 1, 1, 1, 3, 2, 4, 1]
 let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 1, 1]
+let foodCorrectAnswers = [1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 4, 1];
+let sexToyCorrectAnswers = [2, 2, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2];
+
 
 const categories = [
     ["Technology", techQuestions, techAnswers, techCorrectAnswers],
     ["Magic", magicQuestions, magicAnswers, magicCorrectAnswers],
-    ["Food", techQuestions, techAnswers, techCorrectAnswers],
-    ["Random trivia", techQuestions, techAnswers, techCorrectAnswers],
+    ["Food", foodQuestions, foodAnswers, foodCorrectAnswers],
+    ["naughty", sexToyQuestions, sexToyAnswers, sexToyCorrectAnswers],
 ]
 
 let chosenCategory = 0
@@ -106,11 +201,13 @@ let chosenCategory = 0
 const questionAmount = techQuestions.length
 
 let questionNumber = 0
-let correctNumber = 0
+let correctCount = 0
 
+let lifelineUsedThisRound = false
 let lifelinesUsed = 0
+let totalLifelines = 5
 
-let totalLifelines = 3
+let username
 
 // totally didn't take this from stackoverflow trust me
 function shuffle(obj1, obj2, obj3) {
@@ -134,7 +231,7 @@ function shuffle(obj1, obj2, obj3) {
 
 window.onload = function() {
     for (i = 0; i < 4; i++)
-        document.getElementById("categoryI".replace("I", i+1)).innerHTML = categories[i][0]
+        document.getElementById(i+1).innerHTML = categories[i][0]
 }
 
 function flashbang(good) {
@@ -154,16 +251,18 @@ function flashbang(good) {
 
 function changeQuestion() {
     if (questionNumber == 13) boo()
+    lifelineUsedThisRound = false
     document.getElementById("question").innerHTML = categories[chosenCategory][1][questionNumber]
     for (i = 0; i < 4; i++) {
-        document.getElementById("answerI".replace("I", i+1)).innerHTML = categories[chosenCategory][2][questionNumber][i]
-        document.getElementById("answerI".replace("I", i+1)).style = "background-color: #00FFFF"
+        document.getElementById(i+1).innerHTML = categories[chosenCategory][2][questionNumber][i]
+        document.getElementById(i+1).style = "background-color: #00FFFF"
     }
 }
 
 function startQuiz() {
-    document.getElementById("categorySelect").remove()
+    document.getElementById("category-select").remove()
     document.getElementById("quiz").style.display = "block"
+    document.getElementById("half").innerHTML = "50/50 (.)".replace(".", totalLifelines-lifelinesUsed)
 
     shuffle(categories[chosenCategory][1], categories[chosenCategory][2], categories[chosenCategory][3])
 
@@ -171,32 +270,30 @@ function startQuiz() {
 }
 
 function finishQuiz() {
-    document.getElementById("half").remove()
-    document.getElementById("question").remove()
+    document.getElementById("quiz").style.display = "none"
+    document.getElementById("end").style.display = "block"
     for (i = 0; i < 4; i++)
-        document.getElementById("answerI".replace("I", i+1)).remove()
-    const congrats = document.createElement("h1")
-    congrats.innerText = "You did it!"
-    const stat = document.createElement("p")
-    stat.innerText = `You got ${correctNumber} out of ${questionAmount} questions right!`
-    const restart = document.createElement("button")
-    restart.innerHTML = "Restart"
-    restart.onclick = function() {window.location.reload()}
-    document.body.appendChild(congrats)
-    document.body.appendChild(stat)
-    document.body.appendChild(restart)
+        document.getElementById(i+1).remove()
+    const stat = document.getElementById("stats")
+    const nameText = document.getElementById("name-replace")
+    stat.innerHTML = stat.innerHTML.replace("{}", correctCount)
+    nameText.innerHTML = nameText.innerHTML.replace("{}", username)
+}
+
+function restart() {
+    window.location.reload()
 }
 
 // don't question it
 function boo() {
 	document.getElementById("boo").style.display = "block"
 	document.getElementById("quiz").style.display = "none"
-    let audio = document.getElementById("scary").play()
+    document.getElementById("scary").play()
     setTimeout(function() {
         document.getElementById("quiz").style.display = "block"
         document.getElementById("boo").remove()
     }, 3000)
-};
+}
 
 function showResult(wasAnswerCorrect) {
     if (wasAnswerCorrect) {
@@ -209,7 +306,7 @@ function showResult(wasAnswerCorrect) {
         document.getElementById('incorrectSound').currentTime = 0
         document.getElementById('incorrectSound').play()
     }
-    correctNumber += wasAnswerCorrect
+    correctCount += wasAnswerCorrect
     if (questionNumber+1 == questionAmount)
         finishQuiz()
     else {
@@ -220,57 +317,34 @@ function showResult(wasAnswerCorrect) {
 }
 
 function half() {
-    if (lifelineUsed) return
-    lifelineUsed = true
-    document.getElementById("half").style = "background-color: #999999"
+    if (lifelineUsedThisRound || lifelinesUsed == totalLifelines) return
+
+    lifelinesUsed++
+    lifelineUsedThisRound = true
+
     let randomAnswer1
     do {
         randomAnswer1 = Math.floor(Math.random() * 3) + 1
     } while (randomAnswer1 == categories[chosenCategory][3][questionNumber])
+
     let randomAnswer2
     do {
         randomAnswer2 = Math.floor(Math.random() * 3) + 1
     } while (randomAnswer2 == categories[chosenCategory][3][questionNumber] || randomAnswer2 == randomAnswer1)
-    document.getElementById("answerI".replace("I", randomAnswer1)).style.display = "none"
-    document.getElementById("answerI".replace("I", randomAnswer2)).style.display = "none"
+
+    document.getElementById("half").innerHTML = "50/50 (.)".replace(".", totalLifelines-lifelinesUsed)
+    document.getElementById(randomAnswer1).style.display = "none"
+    document.getElementById(randomAnswer2).style.display = "none"
 }
 
-function answer1() {
-    if (categories[chosenCategory][3][questionNumber] == 1) showResult(true)
+function answer(blimg) {
+    if (categories[chosenCategory][3][questionNumber] == blimg.id) showResult(true)
     else showResult(false)
 }
 
-function answer2() {
-    if (categories[chosenCategory][3][questionNumber] == 2) showResult(true)
-    else showResult(false)
-}
-
-function answer3() {
-    if (categories[chosenCategory][3][questionNumber] == 3) showResult(true)
-    else showResult(false)
-}
-
-function answer4() {
-    if (categories[chosenCategory][3][questionNumber] == 4) showResult(true)
-    else showResult(false)
-}
-
-function category1() {
-    chosenCategory = 0
-    startQuiz()
-}
-
-function category2() {
-    chosenCategory = 1
-    startQuiz()
-}
-
-function category3() {
-    chosenCategory = 2
-    startQuiz()
-}
-
-function category4() {
-    chosenCategory = 3
+function category(blimg) {
+    username = document.getElementById("name").value
+    chosenCategory = blimg.id-1
+    document.body.className = "cat.".replace(".", blimg.id)
     startQuiz()
 }
