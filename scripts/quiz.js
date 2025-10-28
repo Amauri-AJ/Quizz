@@ -136,64 +136,63 @@ let foodAnswers = [
     ["Żurek", "Barszcz Biały", "Kapuśniak", "Rosół"]
 ];
 
-let sexToyQuestions = [
-    "What is the most common material used for high-quality vibrators?",
-    "Which sex toy is specifically designed for prostate stimulation?",
-    "What is a common feature of a rabbit vibrator?",
-    "Which toy is designed for use by couples during intercourse?",
-    "What type of toy is typically made from glass, metal, or silicone and is smooth and solid?",
-    "Which type of sex toy can be worn on the fingers for clitoral or nipple stimulation?",
-    "What is the main function of a cock ring?",
-    "Which toy simulates oral sex for a male user?",
-    "Which type of toy is filled with air or water and used for anal training?",
-    "What is a common term for small, discreet vibrating toys worn in underwear?",
-    "Which sex toy uses suction to stimulate the clitoris without direct vibration?",
-    "Which type of lubricant is recommended for silicone sex toys?",
-    "Which toy is often used in BDSM and includes cuffs, blindfolds, and restraints?",
-    "Which type of dildo is curved for targeted G-spot stimulation?",
-    "What is the term for toys designed for remote or app-controlled use?",
-    "Which type of toy mimics the shape of a penis and can be realistic or abstract?",
-    "Which toy is designed to deliver percussive or rumbly sensations to large areas of the body?",
-    "What is the purpose of a kegel exerciser or Ben Wa balls?",
-    "Which sex toy is inflatable to adjust size or pressure during use?",
-    "What is a common way to clean non-porous silicone, glass, or metal toys?"
+let gymQuestions = [
+    "What muscle does the bench press mainly work?",
+    "Which exercise targets the biceps the most?",
+    "What muscle group does the squat work?",
+    "What lift focuses on the back and hamstrings?",
+    "Which muscle is trained by shoulder presses?",
+    "What does a barbell curl train?",
+    "Which exercise is known as the 'king of lifts'?",
+    "What does a lat pulldown target?",
+    "Which lift works your glutes the most?",
+    "What muscle does the leg press work?",
+    "Which exercise trains the triceps the most?",
+    "What’s the main goal of progressive overload?",
+    "Which lift works both legs and lower back?",
+    "What does the chest fly mainly target?",
+    "What’s a good exercise for traps?",
+    "What is used to increase grip strength?",
+    "Which exercise works the core during heavy lifts?",
+    "What does 'PR' stand for in the gym?",
+    "What should you do before heavy lifting?",
+    "Which lift is best for overall strength?"
 ];
 
-let sexToyAnswers = [
-    ["TPE", "Silicone", "PVC", "Rubber"],
-    ["Dildo", "Prostate Massager", "Anal Beads", "Cock Ring"],
-    ["Dual stimulation for clitoris and vagina", "Rotating shaft only", "Vibrates externally", "Made of glass"],
-    ["Couples vibrator", "Anal plug", "Cock sleeve", "Masturbator"],
-    ["Dildo", "Vibrator", "Fleshlight", "Rabbit vibrator"],
-    ["Finger vibrator", "Anal beads", "Cock ring", "Suction toy"],
-    ["Increase erection firmness and duration", "Provide vibration", "Massage muscles", "Deliver suction"],
-    ["Masturbator", "Cock ring", "Anal plug", "Finger vibrator"],
-    ["Butt plug", "Anal beads", "Inflatable plug", "Prostate massager"],
-    ["Panty vibrator", "Bullet vibrator", "Finger vibrator", "G-spot dildo"],
-    ["Clitoral suction toy", "Vibrator", "Dildo", "Masturbator"],
-    ["Water-based lubricant", "Silicone-based lubricant", "Oil-based lubricant", "Hybrid lubricant"],
-    ["BDSM kit", "Anal beads", "Cock ring set", "Gag set"],
-    ["G-spot dildo", "Anal plug", "Prostate massager", "Rabbit vibrator"],
-    ["Remote-controlled vibrator", "Bullet vibrator", "Masturbator", "Cock ring"],
-    ["Dildo", "Vibrator", "Anal beads", "Cock ring"],
-    ["Wand vibrator", "Bullet vibrator", "Cock ring", "G-spot dildo"],
-    ["Strengthen pelvic muscles", "Increase sensitivity", "Provide clitoral stimulation", "Anal training"],
-    ["Inflatable plug", "Vibrating dildo", "Anal beads", "Cock ring"],
-    ["Soap and water", "Boil or use toy cleaner", "Dishwasher", "Rinse with alcohol"]
+let gymAnswers = [
+    ["Chest", "Back", "Legs", "Arms"],
+    ["Bicep Curl", "Bench Press", "Deadlift", "Squat"],
+    ["Legs", "Chest", "Back", "Arms"],
+    ["Deadlift", "Bench Press", "Pull-up", "Curl"],
+    ["Shoulders", "Back", "Legs", "Chest"],
+    ["Biceps", "Triceps", "Forearms", "Shoulders"],
+    ["Deadlift", "Squat", "Bench Press", "Pull-up"],
+    ["Lats", "Chest", "Legs", "Traps"],
+    ["Hip Thrust", "Bench Press", "Curl", "Deadlift"],
+    ["Legs", "Chest", "Core", "Arms"],
+    ["Tricep Pushdown", "Bench Press", "Curl", "Squat"],
+    ["Build strength over time", "Burn fat", "Improve balance", "Run faster"],
+    ["Deadlift", "Bench Press", "Curl", "Fly"],
+    ["Chest", "Back", "Legs", "Triceps"],
+    ["Shrug", "Curl", "Squat", "Dip"],
+    ["Hand Gripper", "Barbell", "Plate", "Cable"],
+    ["Core", "Legs", "Chest", "Arms"],
+    ["Personal Record", "Power Ratio", "Press Rate", "Peak Reps"],
+    ["Warm up", "Stretch after", "Drink water", "Skip sets"],
+    ["Deadlift", "Bench Press", "Bicep Curl", "Lateral Raise"]
 ];
 
 // if you are cheating by getting the answers here you are BORING and DUMB !
 let magicCorrectAnswers = [1, 1, 3, 2, 1, 1, 3, 1, 2, 2, 3, 2, 2, 1, 1, 1, 3, 2, 4, 1]
 let techCorrectAnswers = [3, 2, 2, 1, 4, 3, 1, 1, 4, 4, 1, 3, 3, 2, 1, 2, 4, 2, 1, 1]
 let foodCorrectAnswers = [1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 4, 1];
-let sexToyCorrectAnswers = [2, 2, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2];
-
+let gymCorrectAnswers = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 const categories = [
     ["Technology", techQuestions, techAnswers, techCorrectAnswers],
     ["Magic", magicQuestions, magicAnswers, magicCorrectAnswers],
     ["Food", foodQuestions, foodAnswers, foodCorrectAnswers],
-    ["naughty", sexToyQuestions, sexToyAnswers, sexToyCorrectAnswers],
+    ["gym", gymQuestions, gymAnswers, gymCorrectAnswers],
 ]
 
 let chosenCategory = 0
@@ -255,7 +254,7 @@ function changeQuestion() {
     document.getElementById("question").innerHTML = categories[chosenCategory][1][questionNumber]
     for (i = 0; i < 4; i++) {
         document.getElementById(i+1).innerHTML = categories[chosenCategory][2][questionNumber][i]
-        document.getElementById(i+1).style = "background-color: #00FFFF"
+       
     }
 }
 

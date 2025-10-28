@@ -1,6 +1,24 @@
 button {
-    background-color: aqua;
+    background: #525758;
+    border: none;
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(249, 249, 249, 0.4);
 }
+
+button:hover {
+    background: #191a1a;
+    box-shadow: 0 0 20px rgba(112, 121, 122, 0.8),
+                0 0 40px rgba(122, 127, 128, 0.5);
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
 
 #flashbang-overlay {
   position: fixed;
@@ -11,4 +29,19 @@ button {
   opacity: 0;
   pointer-events: none;
   z-index: 9999;
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color:  #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:  #ffffff;
+    margin-bottom: 2rem;
 }
