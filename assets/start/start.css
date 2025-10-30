@@ -1,16 +1,79 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #e5f675, #dd5e0e);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+         linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        "hd hd hd"
+        "md md md"
+        "ft ft ft";
+    height: 100vh;
+    gap: 10px;
+    align-self: center;
+}
+
+Header {
+    grid-area: hd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+main {
+    grid-area: md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
 
 h1 {
-    font-size: 3rem;
     margin-bottom: 0.5rem;
-    color:  #ffffff;
+    color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    font-size: 132px;
+    align-self: center;
 }
 
 h2 {
-    font-size: 1.5rem;
     font-weight: 400;
-    color:  #ffffff;
+    color: #ffffff;
     margin-bottom: 2rem;
+    font-size: 16px;
+    align-self: center;
 }
 
 button {
@@ -24,6 +87,7 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(249, 249, 249, 0.4);
+    align-self: center;
 }
 
 button:hover {

@@ -45,3 +45,22 @@ h2 {
     color:  #ffffff;
     margin-bottom: 2rem;
 }
+
+input {
+    width: 250px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background: #525758;
+    color:  #000000;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    transition: 0.25s;
+}
+
+input:focus {
+    background: #525758;
+    border-color: #141413;
+    box-shadow: 0 0 10px #ffffff;
+}
