@@ -204,7 +204,7 @@ let correctCount = 0
 
 let lifelineUsedThisRound = false
 let lifelinesUsed = 0
-let totalLifelines = 5
+let totalLifelines = 3
 
 let username
 
@@ -254,7 +254,7 @@ function changeQuestion() {
     document.getElementById("question").innerHTML = categories[chosenCategory][1][questionNumber]
     for (i = 0; i < 4; i++) {
         document.getElementById(i+1).innerHTML = categories[chosenCategory][2][questionNumber][i]
-       
+        document.getElementById(i+1).style = "background-color: #525758"
     }
 }
 
