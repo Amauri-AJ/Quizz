@@ -283,16 +283,6 @@ function restart() {
     window.location.reload()
 }
 
-// don't question it
-function boo() {
-	document.getElementById("boo").style.display = "block"
-	document.getElementById("quiz").style.display = "none"
-    document.getElementById("scary").play()
-    setTimeout(function() {
-        document.getElementById("quiz").style.display = "block"
-        document.getElementById("boo").remove()
-    }, 3000)
-}
 
 function showResult(wasAnswerCorrect) {
     if (wasAnswerCorrect) {
