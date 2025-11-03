@@ -204,7 +204,7 @@ let correctCount = 0
 
 let lifelineUsedThisRound = false
 let lifelinesUsed = 0
-let totalLifelines = 3
+let totalLifelines = 5
 
 let username
 
