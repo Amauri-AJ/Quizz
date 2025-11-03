@@ -190,7 +190,7 @@ let gymCorrectAnswers = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 
 const categories = [
     ["Technology", techQuestions, techAnswers, techCorrectAnswers],
-    ["Magic", magicQuestions, magicAnswers, magicCorrectAnswers],
+    ["SlavicLore", magicQuestions, magicAnswers, magicCorrectAnswers],
     ["Food", foodQuestions, foodAnswers, foodCorrectAnswers],
     ["gym", gymQuestions, gymAnswers, gymCorrectAnswers],
 ]
